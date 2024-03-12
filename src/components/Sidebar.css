@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #1371cf;
+    background-color: #F0F8FF;
     border-right: 1px solid #e9ecef;
     height: 100vh;
     width: 250px;
@@ -11,7 +11,7 @@
 }
 
 .sidebar {
-    background-color: #000000;
+    background-color: 	#F0F8FF;
     display: flex;
     flex-direction: column;
     height: 100%;
