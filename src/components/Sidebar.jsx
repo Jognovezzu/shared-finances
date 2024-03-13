@@ -75,13 +75,13 @@ const Sidebar = () => {
             <ul className="nav-menu-items" >
                 <li className="navbar-toggle">
                     <Link to="#" className="menu-bars">
-                        <AiOutlineClose />
+                        <AiOutlineClose onClick={showSidebar} />
                     </Link>
                 </li>
                 {SideBarItem.map((item, index) => {
                     return (
                         <li key={index} className={item.cName}>
-                            <Link to={item.path}>
+                            <Link to={item.path} onClick={showSidebar}>
                                 {item.icon}
                                 <span>{item.name}</span>
                             </Link>
