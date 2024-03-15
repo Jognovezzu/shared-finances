@@ -11,7 +11,10 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
 
+
+
 import "./Sidebar.css";
+
 
 const Sidebar = () => {
     const SideBarItem = [
@@ -70,29 +73,43 @@ const Sidebar = () => {
     return (
         <>
         <div className="sidebar">
-            <Link to="#" className="menu-bars">
+            <div  className={(sidebar) ? "menu-bars svgdisable" : "menu-bars"}>
+                <Link to="#" className="FaBar" >
                 <FaBars onClick={showSidebar} />
-            </Link>
+                </Link>
+                <ul className="nav-menu-showed" >
+                    {SideBarItem.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path}>
+                                    {item.icon}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
         </div>
+        
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-            <ul className="nav-menu-items" >
-                <li className="navbar-toggle">
-                    <Link to="#" className="menu-bars">
-                        <AiOutlineClose onClick={showSidebar} />
-                    </Link>
-                </li>
-                {SideBarItem.map((item, index) => {
-                    return (
-                        <li key={index} className={item.cName}>
-                            <Link to={item.path} onClick={showSidebar}>
-                                {item.icon}
-                                <span>{item.name}</span>
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ul>
-        </nav>
+            <div className="menu-bars">
+
+                        <Link to="#">
+                            <AiOutlineClose onClick={showSidebar} />
+                        </Link>
+                    <ul className="nav-menu-showed" >
+                    {SideBarItem.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path} onClick={showSidebar}>
+                                    <span>{item.name}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+            </nav>
             
         </>
     );

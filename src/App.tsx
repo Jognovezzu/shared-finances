@@ -10,6 +10,7 @@ import Profile from './pages/Profile';
 import Report from './pages/Report';
 function App() {
   return (
+    <div className='main-container'>
     
     <BrowserRouter>
     
@@ -24,7 +25,9 @@ function App() {
         <Route path='/Report' element= {<Report/>} />
         </Routes>
     </BrowserRouter>
+    </div>
   );
+  
 }
 
 export default App;

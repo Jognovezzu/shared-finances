@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/Pages.css";
 
 const Dashboard = () => {
     return (
