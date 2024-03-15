@@ -22,15 +22,29 @@ const Sidebar = () => {
             cName: "nav-text"
         },
         {
-            name: "About",
-            path: "/about",
-            icon: <FaCode />,
-            cName: "nav-text"
-        },
-        {
             name: "Group",
             path: "/group",
             icon: <FaUserGroup />,
+            cName: "nav-text"
+        },
+        {
+            name: "Income",
+            path: "/income",
+            icon: <FaDollarSign />,
+            cName: "nav-text"
+        },
+        
+        {
+            name: "Goal",
+            path: "/goals",
+            icon: <FaCrosshairs />,
+            cName: "nav-text"
+        },
+        
+        {
+            name: "Report",
+            path: "/report",
+            icon: <FaChartLine />,
             cName: "nav-text"
         },
         {
@@ -40,23 +54,12 @@ const Sidebar = () => {
             cName: "nav-text"
         },
         {
-            name: "Goal",
-            path: "/goals",
-            icon: <FaCrosshairs />,
+            name: "About",
+            path: "/about",
+            icon: <FaCode />,
             cName: "nav-text"
         },
-        {
-            name: "Income",
-            path: "/income",
-            icon: <FaDollarSign />,
-            cName: "nav-text"
-        },
-        {
-            name: "Report",
-            path: "/report",
-            icon: <FaChartLine />,
-            cName: "nav-text"
-        }
+        
         
 
     ]

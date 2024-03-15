@@ -10,7 +10,9 @@ import Profile from './pages/Profile';
 import Report from './pages/Report';
 function App() {
   return (
+    
     <BrowserRouter>
+    
     <Sidebar/>
         <Routes>
         <Route path="/" element={<Dashboard/>} />
