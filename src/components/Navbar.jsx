@@ -1,9 +1,9 @@
 import React from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import profileImg from "../img/profile.jpg"
+import Themetoggle from "./Themetoggle";
 
 const Navbar = () => {
     return (
@@ -13,6 +13,7 @@ const Navbar = () => {
                 <h2>LOGO</h2>
                 </Link>
             </div>
+            <Themetoggle />
             <div className="navbar-menu">
                 <div className="navbar-notif">
                     <IoMdNotificationsOutline />
@@ -21,7 +22,8 @@ const Navbar = () => {
                     <img src={profileImg} alt="profile" />                
                 </div>
                 
-            </div>   
+            </div>  
+
         </div>
     );
 };
