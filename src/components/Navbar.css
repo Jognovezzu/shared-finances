@@ -46,6 +46,7 @@
         height: 100%;
         width: 100%;
         border-radius: 50%;
+        cursor: pointer;
     }
 
 }
@@ -63,3 +64,57 @@
     }
 
 }
+
+.profile-options {
+    font: 1rem;
+    border: #00df9a 1px solid;
+    position: absolute;
+    top: 3.5rem;
+    right: 2.5rem;
+    background-color: #000300;
+    border-radius: 12px;
+    width: 9rem;
+
+    
+    
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem;
+        margin: 0rem;
+
+
+        li{
+            list-style: none;
+            color: #00df9a;
+            width: 100%;
+            text-align: center;
+            
+
+            &&:hover{
+                font-weight:bold;
+            }
+            
+
+            a {
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                padding: 0.5rem 0rem 0.5rem 0rem;
+                text-decoration: none;
+                color: #00df9a;
+            }
+
+        }
+    }
+}
+
+.profile-options.hide{
+    display: none;
+}
+
