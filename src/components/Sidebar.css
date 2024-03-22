@@ -33,6 +33,10 @@
     height: 10%;
     text-align: left;
 
+    &&:hover {
+        font-size: 31px;
+    }
+
     
 }
 
@@ -83,7 +87,6 @@
     position: fixed;
     top: 0;
     transition: 850ms;
-    border-color: red;
     margin-left: 0px;
     text-decoration: none;
     left: -100%;
